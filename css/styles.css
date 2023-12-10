@@ -55,20 +55,13 @@ margin-right: 76px;
     gap: 40px;
 }
 
-.contact-link {
-    margin-right: 40px;
-   
-    
-}
 
-.contact-link last-child {
-    margin-right: 0;
-}
 
 
 .header-info {
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
 .header-logo {
