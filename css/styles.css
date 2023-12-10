@@ -23,11 +23,11 @@ h1,h2,h3,h4,h5,h6,p {
  }
 .conteiner {
     width: 1158px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    
+    border-bottom: 1px solid #e7e9fc;
 }
 /* header */
 .header-conteiner {
@@ -36,9 +36,7 @@ h1,h2,h3,h4,h5,h6,p {
     
 }
 
- .header {
-    border-bottom: 1px solid #e7e9fc;
- }
+ 
 
 
 .header-navigation {
