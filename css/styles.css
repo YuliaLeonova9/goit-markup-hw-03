@@ -8,10 +8,68 @@ body {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0 auto;
+
+}
+ img {
+    display: block;
+    max-width: 100%;
+    
+ }
+.conteiner {
+    width: 1158px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red ;
+}
+/* header */
+.header-conteiner {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ 
+
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation .header-logo {
+margin-right: 76px;
+}
+
+.header-list,
+.header-nav
+ {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-link {
+    margin-right: 40px;
+   
+    
+}
+
+.contact-link last-child {
+    margin-right: 0;
 }
 
 
-/* header */
+.header-info {
+    display: flex;
+    align-items: center;
+}
 
 .header-logo {
   color:#4d5ae5 ;  
@@ -22,6 +80,8 @@ ul {
  text-decoration: none;
  letter-spacing: 0.03em;
  text-transform: uppercase;
+ margin-left: 156px;
+ margin-right: 76px;
 }
 
 .header-logo .accent {
@@ -29,11 +89,19 @@ color: #2e2f42;
 }
 
 .header-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #2E2F42; 
     font-weight: 500;
     line-height: 1.5 ;
     text-decoration: none;
     letter-spacing: 0.02em;
+    margin-right: 40px;
+}
+
+.header-link last-child {
+    margin-right: 0;
 }
 
 .header-link:hover {
@@ -51,6 +119,7 @@ color: #2e2f42;
     line-height: 1.5; 
     font-style: normal;
     letter-spacing: 0.02em;
+   
 }
 
 .contact-link {
@@ -60,6 +129,7 @@ color: #2e2f42;
     line-height: 1.5;
     font-style: normal;
     letter-spacing: 0.02em;
+    
 }
 
 .contact-link:hover {
@@ -88,13 +158,23 @@ color: #404BBF;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    text-align: center;
+    
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-bottom: 48px;
+    text-align: center;
 
 }
 
 .main-section {
     background: #2E2F42;
+    
+}
+
+.hero-conteiner {
+    background: #2E2F42;
+    padding: 188px 292px;
+    text-align: center
 }
 
 .button {
@@ -105,6 +185,13 @@ color: #404BBF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    display: block;
+    padding: 16px 32px;
+    margin: 0 auto;
+    
 }
 
 .button:hover {
@@ -124,12 +211,30 @@ background:  #404BBF;
     letter-spacing: 0.02em;
 }
 
+.features-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+
 
 .bnf-text {
  color:  #434455;
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.02em;
+ margin-bottom: 8px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+   
+}
+
+.features-item {
+    width: 264px;
 }
 
 .section-img {
@@ -146,8 +251,27 @@ background:  #404BBF;
     
 }
 
+.card-img {
+    display: flex;
+    gap: 24px;
+}
+
+
+.card-img .card {
+ text-align: center;
+ background-color: #ffffff;
+ border-radius: 0px 0px 4px 4px;
+ background: var(--WHITE, #fff);
+ box-shadow: 0px 2px 1px 0px rgba (46, 47, 66, 0.08),
+            0px 1px 1px 0px rgba (46, 47, 66, 0.16),
+            0px 1px 6px 0px rgba (46, 47, 66, 0.08);
+ gap: 32px;
+    
+}
+
 .card {
     background-color: #FFFFFF;
+    
 }
 
 .title-job {
@@ -158,6 +282,10 @@ background:  #404BBF;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    flex-basis: 264px;
+    flex-shrink: 0;
+    margin-top: 32px;
 }
 
 .team-job {
@@ -165,6 +293,7 @@ background:  #404BBF;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
+   margin-bottom: 32px;
 }
 
 .portfolio-title {
@@ -216,4 +345,18 @@ background:  #404BBF;
 
 .footer {
     background:  #2E2F42;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
